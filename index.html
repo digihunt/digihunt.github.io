@@ -27,8 +27,15 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
-    <title>Document</title>
+    <title>DigiHunt 2.0</title>
     <style>
+      html,
+      body {
+        margin: 0;
+        height: 100%;
+        overflow: hidden;
+      }
+
       body {
         background-color: black;
         background-size: 100% 100%;
@@ -44,12 +51,16 @@
         /* position: relative; */
         /* top: -10px;    */
         /* height: 90%; */
+        transform: translateY(-50px) scaleY(0.83);
       }
       .navbar-brand img {
         transform: scale(2);
       }
       .map {
-        background-color: yellow;
+        background-color: black;
+        overflow: hidden;
+        height: 720px;
+        /* height: 99%; */
         /* width: 100%; */
         /* height: 90vh; */
       }
@@ -69,6 +80,80 @@
         padding-left: 280px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
       }
+      footer {
+        /* transform:translateY(-270px) */
+      }
+      /* .heading {
+        font-size: 2rem;
+        color: red;
+        text-transform: uppercase;
+        margin-right: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.9);
+        animation: heading 2s infinite;
+      }
+      @keyframes heading {
+        from {
+          text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.9);
+        }
+        to {
+          text-shadow: 0px 0px 8px rgba(218, 11, 11, 0.9);
+        }
+      } */
+
+      .words {
+        text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.9);
+        color: red;
+
+        font-size: 0;
+        line-height: 1.2;
+      }
+
+      .words span {
+        font-size: 3rem;
+        display: inline-block;
+        /* transform: translateX(-380px); */
+        animation: move 3s infinite;
+        position: relative;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        left: -60px;
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate(-10%, 0);
+        }
+        50% {
+          text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
+        }
+        100% {
+          transform: translate(10%, 0);
+        }
+      }
+
+      .words span:nth-child(2) {
+        animation-delay: 0.5s;
+      }
+
+      .words span:nth-child(3) {
+        animation-delay: 0.5s;
+      }
+
+      .words span:nth-child(4) {
+        animation-delay: 0.5s;
+      }
+
+      .words span:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+
+      .words span:nth-child(6) {
+        animation-delay: 0.5s;
+      }
+
+      .words span:nth-child(7) {
+        animation-delay: 0.5s;
+      }
     </style>
   </head>
   <body>
@@ -78,7 +163,7 @@
       style="background-color: black; width: 102%"
     >
       <div class="container-fluid">
-        <a class="navbar-brand">
+        <a href="djacm.co.in" class="navbar-brand">
           <img
             src="./DJACMLOGO.png"
             alt=""
@@ -87,95 +172,104 @@
             class="d-inline-block align-text-top"
           />
         </a>
-        <span
-          class="navbar-text d-flex"
-          style="
-            font-size: 2rem;
-            color: red;
-            text-transform: uppercase;
-            margin-right: 20px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-          "
-        >
-          Digihunt 2.0
-        </span>
+        <div class="words word-1">
+          <span>D</span>
+          <span>I</span>
+          <span>G</span>
+          <span>I</span>
+          <span>H</span>
+          <span>U</span>
+          <span>N</span>
+          <span>T</span>
+          <span> &nbsp;2.0</span>
+        </div>
+        <!-- <span class=" d-flex heading" > Digihunt 2.0 </span> -->
       </div>
     </nav>
 
     <!-- clues -->
-    <div class="map" usemap="#image-map">
-      <img src="./space (3).png" usemap="#image-map" class="mapImage" />
-      <map name="image-map">
-        <area
-          target=""
-          alt=""
-          title=""
-          href="https://drive.google.com/file/d/1985siMNq8ZTzplbnCe5FfilksT-dsWHm/view?usp=sharing"
-          coords="493,75,51"
-          shape="circle"
-        />
-        <area
-          target=""
-          alt=""
-          title=""
-          href="https://drive.google.com/file/d/17OdIKKSlHYzWBR_MKGuXC6mZKU0eA5py/view?usp=sharing"
-          coords="58,353,43"
-          shape="circle"
-        />
-        <area
-          target=""
-          alt=""
-          title=""
-          href="https://drive.google.com/file/d/1Ht_PjzWqCHWyK1SjzYj6zWPxKak1HcZH/view?usp=sharing"
-          coords="1000,531,39"
-          shape="circle"
-        />
-        <area
-          target=""
-          alt=""
-          title=""
-          href="https://drive.google.com/file/d/19Gx1Jho_ryVix2IO_JZM6XxlzSkIgyM_/view?usp=sharing"
-          coords="372,314,43"
-          shape="circle"
-        />
-        <area
-          target=""
-          alt=""
-          title=""
-          href="https://drive.google.com/file/d/1ucqbmPpuIaVB15GuKJGDghylWYrvW44X/view?usp=sharing"
-          coords="1248,390,41"
-          shape="circle"
-        />
-        <area
-          target=""
-          alt=""
-          title=""
-          href="https://drive.google.com/file/d/1p_wfDeeCFpwp-CwaBAmR3wgyXfnhPkj_/view?usp=sharing"
-          coords="660,369,38"
-          shape="circle"
-        />
-      </map>
-    </div>
+    <center>
+      <div class="map" usemap="#image-map">
+        <img src="./space (3) (1).png" usemap="#image-map" class="mapImage" />
+        <map name="image-map">
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="https://drive.google.com/file/d/1985siMNq8ZTzplbnCe5FfilksT-dsWHm/view?usp=sharing"
+            coords="493,75,51"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="https://drive.google.com/file/d/17OdIKKSlHYzWBR_MKGuXC6mZKU0eA5py/view?usp=sharing"
+            coords="58,353,43"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="https://drive.google.com/file/d/1Ht_PjzWqCHWyK1SjzYj6zWPxKak1HcZH/view?usp=sharing"
+            coords="1000,531,39"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="https://drive.google.com/file/d/19Gx1Jho_ryVix2IO_JZM6XxlzSkIgyM_/view?usp=sharing"
+            coords="372,314,43"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="https://drive.google.com/file/d/1ucqbmPpuIaVB15GuKJGDghylWYrvW44X/view?usp=sharing"
+            coords="1248,390,41"
+            shape="circle"
+          />
+          <area
+            target="_blank"
+            alt=""
+            title=""
+            href="https://drive.google.com/file/d/1p_wfDeeCFpwp-CwaBAmR3wgyXfnhPkj_/view?usp=sharing"
+            coords="660,369,38"
+            shape="circle"
+          />
+        </map>
+      </div>
+    </center>
+
     <!-- footer -->
     <footer>
       <nav
-        class="navbar sticky-bottom navbar-dark"
-        style="background-color: black; padding: 0%"
+        class="navbar fixed-bottom navbar-dark"
+        style="background-color: black; padding: 0"
       >
         <div class="container">
           <a
             href="https://www.instagram.com/djsanghvi_acm/?hl=en"
             class="socialLinks"
+            target="_blank"
           >
             <i class="icons fab fa-instagram"></i>
             &nbsp; djsanghvi_acm
           </a>
-          <a href="https://www.facebook.com/djscoe.acm.5" class="socialLinks">
+          <a
+            href="https://www.facebook.com/djscoe.acm.5"
+            target="_blank"
+            class="socialLinks"
+          >
             <i class="fab fa-facebook"></i>
             &nbsp; djscoe.acm
           </a>
           <a
             href="https://in.linkedin.com/company/dj-sanghvi-acm"
+            target="_blank"
             class="socialLinks"
           >
             <i class="icons fab fa-linkedin-in"></i>
