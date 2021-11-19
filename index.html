@@ -27,8 +27,15 @@
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
     ></script>
+
     <title>DigiHunt 2.0</title>
+
     <style>
+      @font-face {
+        font-family: akira;
+        src: url("./font/akira.otf") format("opentype");
+      }
+
       html,
       body {
         margin: 0;
@@ -38,8 +45,7 @@
 
       body {
         background-color: black;
-        background-size: 100% 100%;
-        min-width: 100vh;
+        font-family: akira, "Times New Roman", Times, serif;
       }
 
       .box {
@@ -47,115 +53,63 @@
         align-items: center;
         justify-content: center;
       }
-      .mapImage {
-        /* position: relative; */
-        /* top: -10px;    */
-        /* height: 90%; */
-        transform: translateY(-50px) scaleY(0.83);
-      }
+
       .navbar-brand img {
+        padding-left: 2px;
         transform: scale(2);
       }
+
       .map {
         background-color: black;
         overflow: hidden;
-        height: 720px;
-        /* height: 99%; */
-        /* width: 100%; */
-        /* height: 90vh; */
+        max-width: 1300px;
+        margin: 0 auto;
       }
+
       .socialLinks {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
         text-decoration: none;
         color: white;
         transform: translateX(-20px);
       }
+
       .socialLinks:hover {
         margin: 0;
         color: red;
       }
+
       .studentC {
-        color: rgba(245, 245, 245, 0.795);
+        color: #fff;
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
         transform: translateY(8px);
         padding-left: 280px;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-      }
-      footer {
-        /* transform:translateY(-270px) */
-      }
-      /* .heading {
-        font-size: 2rem;
-        color: red;
-        text-transform: uppercase;
-        margin-right: 20px;
-        font-family: Georgia, "Times New Roman", Times, serif;
-        text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.9);
-        animation: heading 2s infinite;
-      }
-      @keyframes heading {
-        from {
-          text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.9);
-        }
-        to {
-          text-shadow: 0px 0px 8px rgba(218, 11, 11, 0.9);
-        }
-      } */
-
-      .words {
-        text-shadow: 0px 0px 8px rgba(255, 0, 0, 0.9);
-        color: red;
-
-        font-size: 0;
-        line-height: 1.2;
       }
 
-      .words span {
-        font-size: 3rem;
+      .heading {
+        text-shadow: 0px 0px 20px rgba(255, 0, 0, 0.9);
+        color: #fff;
+        font-size: 2.5rem;
         display: inline-block;
-        /* transform: translateX(-380px); */
-        animation: move 3s infinite;
         position: relative;
-        font-family: Georgia, "Times New Roman", Times, serif;
         left: -60px;
       }
 
-      @keyframes move {
-        0% {
-          transform: translate(-10%, 0);
-        }
-        50% {
-          text-shadow: 0 25px 50px rgba(0, 0, 0, 0.75);
-        }
-        100% {
-          transform: translate(10%, 0);
+      @media screen and (max-width: 768px) {
+        .heading {
+          font-size: 2rem;
+          left: -40px;
         }
       }
 
-      .words span:nth-child(2) {
-        animation-delay: 0.5s;
-      }
-
-      .words span:nth-child(3) {
-        animation-delay: 0.5s;
-      }
-
-      .words span:nth-child(4) {
-        animation-delay: 0.5s;
-      }
-
-      .words span:nth-child(5) {
-        animation-delay: 0.5s;
-      }
-
-      .words span:nth-child(6) {
-        animation-delay: 0.5s;
-      }
-
-      .words span:nth-child(7) {
-        animation-delay: 0.5s;
+      @media screen and (max-width: 576px) {
+        .heading {
+          font-size: 1.5rem;
+          left: -20px;
+        }
       }
     </style>
   </head>
+
   <body>
     <!-- header -->
     <nav
@@ -163,86 +117,78 @@
       style="background-color: black; width: 102%"
     >
       <div class="container-fluid">
-        <a href="djacm.co.in" class="navbar-brand">
+        <a href="https://djacm.co.in" target="_blank" class="navbar-brand">
           <img
-            src="./DJACMLOGO.png"
+            src="./images/djacmLogo.png"
             alt=""
             width="30"
             height="30"
             class="d-inline-block align-text-top"
           />
         </a>
-        <div class="words word-1">
-          <span>D</span>
-          <span>I</span>
-          <span>G</span>
-          <span>I</span>
-          <span>H</span>
-          <span>U</span>
-          <span>N</span>
-          <span>T</span>
-          <span> &nbsp;2.0</span>
-        </div>
-        <!-- <span class=" d-flex heading" > Digihunt 2.0 </span> -->
+        <div class="heading">DIGIHUNT&nbsp;2.0</div>
       </div>
     </nav>
 
     <!-- clues -->
-    <center>
-      <div class="map" usemap="#image-map">
-        <img src="./space (3) (1).png" usemap="#image-map" class="mapImage" />
-        <map name="image-map">
-          <area
-            target="_blank"
-            alt=""
-            title=""
-            href="https://drive.google.com/file/d/1985siMNq8ZTzplbnCe5FfilksT-dsWHm/view?usp=sharing"
-            coords="493,75,51"
-            shape="circle"
-          />
-          <area
-            target="_blank"
-            alt=""
-            title=""
-            href="https://drive.google.com/file/d/17OdIKKSlHYzWBR_MKGuXC6mZKU0eA5py/view?usp=sharing"
-            coords="58,353,43"
-            shape="circle"
-          />
-          <area
-            target="_blank"
-            alt=""
-            title=""
-            href="https://drive.google.com/file/d/1Ht_PjzWqCHWyK1SjzYj6zWPxKak1HcZH/view?usp=sharing"
-            coords="1000,531,39"
-            shape="circle"
-          />
-          <area
-            target="_blank"
-            alt=""
-            title=""
-            href="https://drive.google.com/file/d/19Gx1Jho_ryVix2IO_JZM6XxlzSkIgyM_/view?usp=sharing"
-            coords="372,314,43"
-            shape="circle"
-          />
-          <area
-            target="_blank"
-            alt=""
-            title=""
-            href="https://drive.google.com/file/d/1ucqbmPpuIaVB15GuKJGDghylWYrvW44X/view?usp=sharing"
-            coords="1248,390,41"
-            shape="circle"
-          />
-          <area
-            target="_blank"
-            alt=""
-            title=""
-            href="https://drive.google.com/file/d/1p_wfDeeCFpwp-CwaBAmR3wgyXfnhPkj_/view?usp=sharing"
-            coords="660,369,38"
-            shape="circle"
-          />
-        </map>
-      </div>
-    </center>
+    <div class="map">
+      <img
+        src="./images/emergencyPod.png"
+        usemap="#emergencyPod"
+        width="100%"
+      />
+
+      <map name="emergencyPod">
+        <area
+          target="_blank"
+          alt="Clue 1"
+          title="Clue 1"
+          href=""
+          coords="741,551,916,551,919,1095,760,1105,711,1045,696,605"
+          shape="poly"
+        />
+        <area
+          target="_blank"
+          alt="Clue 2"
+          title="Clue 2"
+          href=""
+          coords="3,543,402,541,421,1144,325,1070,226,1053,177,1053,36,1055,11,1053"
+          shape="poly"
+        />
+        <area
+          target="_blank"
+          alt="Clue 3"
+          title="Clue 3"
+          href=""
+          coords="1908,946,2249,919,2252,1162,2470,1263,2160,1325,1898,1221"
+          shape="poly"
+        />
+        <area
+          target="_blank"
+          alt="Clue 4"
+          title="Clue 4"
+          href=""
+          coords="2583,534,2576,1125,2784,1144,2791,519,2680,526"
+          shape="poly"
+        />
+        <area
+          target="_blank"
+          alt="Clue 5"
+          title="Clue 5"
+          href=""
+          coords="1087,133,231"
+          shape="circle"
+        />
+        <area
+          target="_blank"
+          alt="Clue 6"
+          title="Clue 6"
+          href=""
+          coords="1473,794,1500,878,1473,913,1413,903,1418,802,1443,760"
+          shape="poly"
+        />
+      </map>
+    </div>
 
     <!-- footer -->
     <footer>
@@ -260,14 +206,6 @@
             &nbsp; djsanghvi_acm
           </a>
           <a
-            href="https://www.facebook.com/djscoe.acm.5"
-            target="_blank"
-            class="socialLinks"
-          >
-            <i class="fab fa-facebook"></i>
-            &nbsp; djscoe.acm
-          </a>
-          <a
             href="https://in.linkedin.com/company/dj-sanghvi-acm"
             target="_blank"
             class="socialLinks"
@@ -279,5 +217,10 @@
         </div>
       </nav>
     </footer>
+
+    <script type="text/javascript" src="./js/imageMapResizer.min.js"></script>
+    <script>
+      imageMapResize();
+    </script>
   </body>
 </html>
