@@ -40,7 +40,7 @@
       body {
         margin: 0;
         height: 100%;
-        overflow: hidden;
+        overflow-x: hidden;
       }
 
       body {
@@ -61,7 +61,6 @@
 
       .map {
         background-color: black;
-        /* overflow: hidden; */
         max-width: 1200px;
         margin: 0 auto;
       }
@@ -108,38 +107,38 @@
           left: -20px;
         }
       }
-      
-      @media (max-width:1000px){
-        .studentC{
+
+      @media (max-width: 1000px) {
+        .studentC {
           padding: 0;
           font-size: 1rem;
         }
-        .socialLinks{
+        .socialLinks {
           padding: 0;
           margin: 0;
-          font-size: .6rem;
+          font-size: 0.6rem;
         }
       }
-      @media (max-width:740px){
-        .studentC{
+      @media (max-width: 740px) {
+        .studentC {
           padding: 0;
-          font-size: .7rem;
+          font-size: 0.7rem;
         }
-        .socialLinks{
+        .socialLinks {
           padding: 0;
           margin: 0;
-          font-size: .5rem;
+          font-size: 0.5rem;
         }
       }
-      @media (max-width:550px){
-        .studentC{
+      @media (max-width: 550px) {
+        .studentC {
           padding: 0;
-          font-size: .5rem;
+          font-size: 0.5rem;
         }
-        .socialLinks{
+        .socialLinks {
           padding: 0;
           margin: 0;
-          font-size: .4rem;
+          font-size: 0.4rem;
         }
       }
     </style>
@@ -227,16 +226,17 @@
 
     <!-- footer -->
     <footer>
-      <nav class="navbar fixed-bottom navbar-expand-lg navbar-dark" style='background-color: black;'>
+      <nav
+        class="navbar fixed-bottom navbar-expand-lg navbar-dark"
+        style="background-color: black"
+      >
         <div class="container-fluid">
-          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button> -->
-          <a class="navbar-brand studentC" href="#">DJSCE ACM Student Chapter</a>
-          <!-- <div class="collapse navbar-collapse" id="navbarTogglerDemo03"> -->
-            <ul class="navbar-nav d-flex me-auto ">
-              <li class="nav-item">
-                <a
+          <a class="navbar-brand studentC" href="#"
+            >DJSCE ACM Student Chapter</a
+          >
+          <ul class="navbar-nav d-flex me-auto">
+            <li class="nav-item">
+              <a
                 href="https://www.instagram.com/djsanghvi_acm/?hl=en"
                 class="socialLinks"
                 target="_blank"
@@ -244,43 +244,18 @@
                 <i class="icons fab fa-instagram"></i>
                 &nbsp; djsanghvi_acm
               </a>
-                <a
+              <a
                 href="https://in.linkedin.com/company/dj-sanghvi-acm"
                 target="_blank"
                 class="socialLinks"
               >
                 <i class="icons fab fa-linkedin-in"></i>
                 &nbsp; DJ Sanghvi ACM
-              </a>              </li>
-             
-            </ul>
-          <!-- </div> -->
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
-      <!-- <nav
-        class="navbar fixed-bottom navbar-dark"
-        style="background-color: black; padding: 0"
-      > -->
-        <!-- <div class="container">
-          <a
-            href="https://www.instagram.com/djsanghvi_acm/?hl=en"
-            class="socialLinks"
-            target="_blank"
-          >
-            <i class="icons fab fa-instagram"></i>
-            &nbsp; djsanghvi_acm
-          </a>
-          <a
-            href="https://in.linkedin.com/company/dj-sanghvi-acm"
-            target="_blank"
-            class="socialLinks"
-          >
-            <i class="icons fab fa-linkedin-in"></i>
-            &nbsp; DJ Sanghvi ACM
-          </a>
-          <p class="studentC">DJSCE ACM Student Chapter</p>
-        </div>
-      </nav> -->
     </footer>
 
     <script type="text/javascript" src="./js/imageMapResizer.min.js"></script>
